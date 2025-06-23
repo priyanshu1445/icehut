@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 import { Send } from "lucide-react";
+import twoImage from '../assets/4-1-e1741368306652.png';
 
 import aboutBg from '../assets/sumup-kRv6EgQ45IE-unsplash.jpg';
 import about1 from '../assets/about_icon01.png';
@@ -34,14 +35,72 @@ const About = () => {
         data-aos="fade-up"
       >
         <div className="relative z-10 text-center px-4 text-white">
-          <h1 className="text-2xl md:text-5xl font-bold mb-4">
-            "Where Expertise Meets Commitment – Know Us Better."
+          <h1 className="text-2xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-green-600 to-green-900">
+           The Best Digital Solutions with 10 Years of Experience
           </h1>
           <p className="max-w-xl mx-auto text-sm md:text-base">
             Discover who we are, what we do, and how we help shape your digital future.
           </p>
         </div>
       </div>
+
+
+
+
+      <div className="py-20 bg-gradient-to-b from-white via-slate-50 to-white" data-aos="fade-up">
+  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+
+  
+
+    {/* Right Side - Content */}
+    <div>
+      <h2 className="text-3xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-green-700 to-green-900 mb-6">
+        Why Choose Us
+      </h2>
+
+      <p className="text-gray-600 text-base mb-6">
+        At Ice Hut Technologies, we believe in delivering more than just code. We build impactful, scalable, and human-centered digital experiences tailored to your business needs.
+      </p>
+
+      <ul className="space-y-4 text-gray-800 text-[16px] leading-relaxed font-medium">
+        <li className="flex items-start gap-3 group">
+          <span className="text-green-500 text-xl">✅</span>
+          <span className="group-hover:text-green-600 transition-colors">Creative Meets Code</span>
+        </li>
+        <li className="flex items-start gap-3 group">
+          <span className="text-blue-500 text-xl">🛠</span>
+          <span className="group-hover:text-blue-600 transition-colors">Built for Scale</span>
+        </li>
+        <li className="flex items-start gap-3 group">
+          <span className="text-purple-500 text-xl">📈</span>
+          <span className="group-hover:text-purple-600 transition-colors">Results-Focused</span>
+        </li>
+        <li className="flex items-start gap-3 group">
+          <span className="text-pink-500 text-xl">💻</span>
+          <span className="group-hover:text-pink-600 transition-colors">People First</span>
+        </li>
+        <li className="flex items-start gap-3 group">
+          <span className="text-yellow-500 text-xl">🚀</span>
+          <span className="group-hover:text-yellow-600 transition-colors">Fast Turnaround & Agile Methodology</span>
+        </li>
+        <li className="flex items-start gap-3 group">
+          <span className="text-red-500 text-xl">🤝</span>
+          <span className="group-hover:text-red-600 transition-colors">Long-Term Client Relationships</span>
+        </li>
+      </ul>
+    </div>
+      {/* Left Side - Image */}
+    <div className="flex justify-center">
+      <img
+        src={twoImage}
+        alt="Why Choose Us"
+        className="w-full max-w-md transition-transform duration-300 hover:scale-105"
+      />
+    </div>
+
+  </div>
+</div>
+
 
       {/* About Intro */}
       <div className="px-4 py-10 bg-gray-50">
@@ -61,6 +120,9 @@ const About = () => {
             helping you achieve your digital goals with excellence and integrity.
           </p>
         </div>
+
+
+
 
         {/* Section 1 – Who We Are */}
         <div

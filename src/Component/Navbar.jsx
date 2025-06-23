@@ -74,7 +74,10 @@ const Navbar = () => {
               <Link to="/about" className="hover:text-green-600 transition">About</Link>
               <Link to="/services" className="hover:text-green-600 transition">Services</Link>
               <Link to="/portfolio" className="hover:text-green-600 transition">Portfolio</Link>
-              <Link to="/contact" className="hover:text-green-600 transition">Contact</Link>
+          <a href="tel:+918209843003" className="hover:text-green-600 transition">
+Contact
+</a>
+
             </div>
 
             {/* Mobile Menu Button */}
@@ -95,7 +98,10 @@ const Navbar = () => {
             <Link to="/services" className="block py-2 text-gray-700 hover:text-green-600">Services</Link>
             <Link to="/portfolio" className="block py-2 text-gray-700 hover:text-green-600">Portfolio</Link>
             <Link to="/about" className="block py-2 text-gray-700 hover:text-green-600">About</Link>
-            <Link to="/contact" className="block py-2 text-gray-700 hover:text-green-600">Contact</Link>
+            <a href="tel:+918209843003" className="hover:text-green-600 transition">
+Contact
+</a>
+
           </div>
         </nav>
       </header>

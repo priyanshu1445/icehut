@@ -9,6 +9,8 @@ import About from './Pages/About';
 import Services from './Pages/Services';
 import ScrollToTop from './Component/ScrollToTop'; // ✅ Import the component
 import Portfolio from './Pages/Portfolio';
+import ProjectsPage from './Pages/ProjectPage';
+import MobileDevelopmentPage from './Pages/MobileDevelopment';
 
 const App = () => {
   useEffect(() => {
@@ -34,6 +36,10 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="website-development" element={<ProjectsPage />} />
+        <Route path="/mobile-development" element={<MobileDevelopmentPage />} />
+
+
       </Routes>
     </Router>
   );

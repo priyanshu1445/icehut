@@ -2,17 +2,19 @@ import React from 'react'
 import Navbar from '../Component/Navbar'
 import heroVideo from  '../assets/3196062-uhd_3840_2160_25fps.mp4'
 import { Brush, ShieldCheck, BarChart2, Trophy } from "lucide-react";
-import oneImage from '../assets/yarn_img.png'
-import twoImage from '../assets/sumup-kRv6EgQ45IE-unsplash.jpg'
+// import oneImage from '../assets/yarn_img.png'
+import { Smartphone, Computer } from "lucide-react";
+import twoImage from '../assets/2-12.png'
 import TestimonialSlider from '../Component/TestimonialSlider'
 import {
   TrendingUp,
-  Smartphone,
   Search,
   Newspaper,
   CircleDollarSign,
   ClipboardList,
 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from 'react-router-dom'
 import { MapPin, Mail, Phone } from "lucide-react"
 import Footer from '../Component/Footer';
 import ClientLogos from '../Component/ClientLogos';
@@ -36,24 +38,56 @@ const Home = () => {
     loop
     muted
     playsInline
-    className="absolute top-0 left-0 w-full h-full opacity-50 object-cover z-0"
+    className="absolute top-0 left-0 w-full h-full opacity-40 object-cover z-0"
   >
     <source src={heroVideo} type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
   {/* 🔹 Main Text Content */}
-  <div className="relative z-10 text-center px-4 py-12 sm:py-20 text-white">
-    <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-2 sm:mb-4 bg-gradient-to-r from-cyan-400 via-green-500 to-blue-600 bg-clip-text text-transparent">
-      Welcome to
-    </h1>
-    <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-green-500 bg-clip-text text-transparent leading-tight">
-      ICE Hut Technology
-    </h2>
-    <p className="mt-4 text-base sm:text-lg text-black font-medium max-w-xl mx-auto">
-      Where innovation meets execution — crafting digital solutions that elevate brands.
-    </p>
+  <div className="relative z-10 text-center px-6 py-16 sm:py-24  text-black" data-aos="fade-up">
+  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-500 to-green-900">
+    We don’t just build websites or apps — we build digital journeys
+  </h1>
+
+  <p className="mt-6 text-base sm:text-lg md:text-xl text-gray-700 font-medium max-w-2xl mx-auto leading-relaxed">
+    Ice Hut Technologies is a team of developers, designers, and dreamers who turn code into impactful experiences.
+  </p>
+
+
+  <div
+  className='mt-12 flex gap-8 justify-center'>
+   <a
+  href="tel:+91 8209843003" // Replace with your actual WhatsApp number
+  target="_blank"
+  rel="noopener noreferrer"
+  className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+>
+  {/* Hover Animation */}
+  <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+
+  {/* Button Content */}
+  <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
+    Get a Free Quote <ArrowRight className="w-5 h-5" />
+  </span>
+</a>
+
+
+    <Link
+      to="/services"
+      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+    >
+      {/* Hover Animation */}
+      <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+
+      {/* Button Content */}
+      <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
+       Explore Our Services <ArrowRight className="w-5 h-5" />
+      </span>
+    </Link>
   </div>
+</div>
+
 
 </div>
 
@@ -71,14 +105,21 @@ const Home = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
         Your Digital Growth Partner
       </h2>
-      <p className="text-gray-700 leading-relaxed">
-        At ICE HUT, we believe in delivering powerful digital marketing solutions that fuel business growth and increase brand visibility.
-        Our team of passionate experts combines creativity and strategy to drive measurable results.
-        From SEO to PPC campaigns, we help your brand thrive in the digital world.
+      <p className="text-gray-700 mb-8 leading-relaxed">
+       At ICE Hut Technology, our mission is to empower businesses with innovative digital solutions that drive growth and success. We are committed to delivering exceptional service, fostering creativity, and building lasting partnerships with our clients.
       </p>
-      <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-md font-semibold transition duration-300">
-        Learn More →
-      </button>
+      <Link
+      to="/about"
+      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+    >
+      {/* Hover Animation */}
+      <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+
+      {/* Button Content */}
+      <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
+      Learn more <ArrowRight className="w-5 h-5" />
+      </span>
+    </Link>
     </div>
 
     {/* Right Cards */}
@@ -154,19 +195,78 @@ const Home = () => {
           Our Mission
         </h1>
         <p className='text-white mt-4'>
-          At ICE Hut Technology, our mission is to empower businesses with innovative digital solutions that drive growth and success. We are committed to delivering exceptional service, fostering creativity, and building lasting partnerships with our clients.
+       To help businesses thrive in the ever-evolving digital landscape via personalized web,
+mobile, and marketing platforms, all while ensuring strong confidentiality,
+innovation, and client focus.
+
         </p>
     </div>
 </div>
 
+{/*  here the client expectations meeets  */}
+
+
+<div className="py-20 bg-gray-50 " data-aos="fade-up">
+  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+
+    {/* Left Side - Image */}
+    <div className="flex justify-center">
+      <img
+        src={twoImage}
+        alt="Client Benefits"
+        className="w-full max-w-md rounded-xl shadow-xl transition-transform duration-300 hover:scale-105"
+      />
+    </div>
+
+    {/* Right Side - Content */}
+    <div>
+      <h2 className="text-3xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-green-700 to-green-900 mb-6">
+        Why Clients Choose Us
+      </h2>
+
+      <p className="text-gray-600 text-base mb-6">
+        At Ice Hut Technologies, we craft digital experiences that deliver real business impact. Here's what sets us apart:
+      </p>
+
+      <ul className="space-y-4 text-gray-800 text-base leading-relaxed">
+        <li className="flex items-start gap-3 group">
+          <span className="text-green-500 text-xl">🚀</span>
+          <span className="group-hover:text-green-600 transition-colors">Creative Meets Code</span>
+        </li>
+        <li className="flex items-start gap-3 group">
+          <span className="text-blue-500 text-xl">📈</span>
+          <span className="group-hover:text-blue-600 transition-colors">Built for Scale</span>
+        </li>
+        <li className="flex items-start gap-3 group">
+          <span className="text-purple-500 text-xl">🎯</span>
+          <span className="group-hover:text-purple-600 transition-colors">Results-Focused</span>
+        </li>
+        <li className="flex items-start gap-3 group">
+          <span className="text-pink-500 text-xl">🤝</span>
+          <span className="group-hover:text-pink-600 transition-colors">People First</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+    
+
+
+
+
 {/*  another section  starts from here  */}
-<div className="flex flex-col md:flex-row items-center gap-8 px-6 py-12 md:px-16 md:py-20 bg-gray-50">
-  {/* Left Image */}
+{/* <div className="flex flex-col md:flex-row items-center gap-8 px-6 py-12 md:px-16 md:py-20 bg-gray-50">
+  {/* Left Image
   <div className="w-full md:w-1/2 flex justify-center">
     <img src={oneImage} alt="Yarn" className="max-w-[300px] md:max-w-[400px] w-full" />
   </div>
 
-  {/* Right Text */}
+  {/* Right Text 
   <div className="w-full md:w-1/2 text-center md:text-left">
     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
       We Spin the digital yarn &<br />
@@ -178,7 +278,7 @@ const Home = () => {
       But first, we strive to understand your brand essence and create a customized digital experience.
     </p>
   </div>
-</div>
+</div> */}
 
 {/*  another section starts  */}
 
@@ -225,77 +325,67 @@ const Home = () => {
     </div>
 
  
-    <div className="py-12 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    
 
-        {/* Performance Marketing */}
-        <div data-aos="fade-up" className="rounded-xl p-6 shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center bg-blue-100 hover:bg-blue-300">
-          <div className="flex justify-center items-center mb-4">
-            <TrendingUp className="w-10 h-10 text-blue-500" />
-          </div>
-          <h3 className="text-xl font-bold text-gray-800">Performance Marketing</h3>
-          <p className="mt-2 text-sm">
-            Data-driven campaigns optimizing ROI through targeted, measurable digital strategies.
-          </p>
-        </div>
-
-        {/* Mobile Development */}
-        <div data-aos="fade-up" data-aos-delay="100" className="rounded-xl p-6 shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center bg-green-100 hover:bg-green-300">
-          <div className="flex justify-center items-center mb-4">
-            <Smartphone className="w-10 h-10 text-green-500" />
-          </div>
-          <h3 className="text-xl font-bold text-gray-800">Mobile Development</h3>
-          <p className="mt-2 text-sm">
-            Custom mobile apps with secure, user-friendly design and full-cycle development.
-          </p>
-        </div>
-
-        {/* SEO Services */}
-        <div data-aos="fade-up" data-aos-delay="200" className="rounded-xl p-6 shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center bg-purple-100 hover:bg-purple-300">
-          <div className="flex justify-center items-center mb-4">
-            <Search className="w-10 h-10 text-purple-500" />
-          </div>
-          <h3 className="text-xl font-bold text-gray-800">SEO Services</h3>
-          <p className="mt-2 text-sm">
-            Enhancing website visibility, rankings, and traffic through content and optimization.
-          </p>
-        </div>
-
-        {/* Social Media Marketing */}
-        <div data-aos="fade-up" data-aos-delay="300" className="rounded-xl p-6 shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center bg-yellow-100 hover:bg-yellow-300">
-          <div className="flex justify-center items-center mb-4">
-            <Newspaper className="w-10 h-10 text-yellow-500" />
-          </div>
-          <h3 className="text-xl font-bold text-gray-800">Social Media Marketing</h3>
-          <p className="mt-2 text-sm">
-            Profile optimization, content creation, engagement & analytics to boost presence.
-          </p>
-        </div>
-
-        {/* Website Development */}
-        <div data-aos="fade-up" data-aos-delay="400" className="rounded-xl p-6 shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center bg-green-100 hover:bg-green-300">
-          <div className="flex justify-center items-center mb-4">
-            <CircleDollarSign className="w-10 h-10 text-green-500" />
-          </div>
-          <h3 className="text-xl font-bold text-gray-800">Website Development</h3>
-          <p className="mt-2 text-sm">
-            Full-service web design and development with ongoing support.
-          </p>
-        </div>
-
-        {/* PPC Advertising */}
-        <div data-aos="fade-up" data-aos-delay="500" className="rounded-xl p-6 shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center bg-pink-100 hover:bg-pink-300">
-          <div className="flex justify-center items-center mb-4">
-            <ClipboardList className="w-10 h-10 text-pink-500" />
-          </div>
-          <h3 className="text-xl font-bold text-gray-800">PPC Advertising</h3>
-          <p className="mt-2 text-sm">
-            Traffic-boosting campaigns with strategic keywords, ads, and ROI tracking.
-          </p>
-        </div>
-
+<div className="py-12 px-4 bg-gray-50">
+  <div className="max-w-5xl mx-auto grid gap-12 sm:grid-cols-1 md:grid-cols-2">
+    
+    {/* Mobile Development */}
+    <div
+      data-aos="fade-up"
+      data-aos-delay="100"
+      className="rounded-xl p-6 shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center bg-green-100 hover:bg-green-300"
+    >
+      <div className="flex justify-center items-center mb-4">
+        <Smartphone className="w-10 h-10 text-green-600" />
       </div>
+      <h3 className="text-xl font-bold text-gray-800">Mobile Development</h3>
+      <p className="mt-2  mb-6 text-sm text-gray-700">
+        Custom mobile apps with secure, user-friendly design and full-cycle development.
+      </p>
+      <Link
+      to="/mobile-development"
+      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+    >
+      {/* Hover Animation */}
+      <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+
+      {/* Button Content */}
+      <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
+       Explore Our Services <ArrowRight className="w-5 h-5" />
+      </span>
+    </Link>
     </div>
+
+    {/* Website Development */}
+    <div
+      data-aos="fade-up"
+      data-aos-delay="200"
+      className="rounded-xl p-6 shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center bg-blue-100 hover:bg-blue-300"
+    >
+      <div className="flex justify-center items-center mb-4">
+        <Computer className="w-10 h-10 text-blue-600" />
+      </div>
+      <h3 className="text-xl font-bold text-gray-800">Website Development</h3>
+      <p className="mt-2 mb-10 text-sm text-gray-700">
+        Full-service web design and development with ongoing support.
+      </p>
+        <Link
+      to="/website-development"
+      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-blue-400 rounded-lg overflow-hidden group"
+    >
+      {/* Hover Animation */}
+      <span className="absolute inset-y-0 right-0 w-0 bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+
+      {/* Button Content */}
+      <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
+       Explore Our Services <ArrowRight className="w-5 h-5" />
+      </span>
+    </Link>
+    </div>
+
+  </div>
+</div>
 
 
 
