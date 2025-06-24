@@ -46,7 +46,7 @@ const Home = () => {
 
   {/* 🔹 Main Text Content */}
   <div className="relative z-10 text-center px-6 py-16 sm:py-24  text-black" data-aos="fade-up">
-  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-500 to-green-900">
+  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#38622F]">
     We don’t just build websites or apps — we build digital journeys
   </h1>
 
@@ -61,10 +61,10 @@ const Home = () => {
   href="tel:+91 8209843003" // Replace with your actual WhatsApp number
   target="_blank"
   rel="noopener noreferrer"
-  className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+  className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-[#38622F] rounded-lg overflow-hidden group"
 >
   {/* Hover Animation */}
-  <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+  <span className="absolute inset-y-0 right-0 w-0 bg-[#38622F] transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
 
   {/* Button Content */}
   <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
@@ -75,10 +75,10 @@ const Home = () => {
 
     <Link
       to="/services"
-      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-[#38622F] rounded-lg overflow-hidden group"
     >
       {/* Hover Animation */}
-      <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+      <span className="absolute inset-y-0 right-0 w-0 bg-[#38622F] transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
 
       {/* Button Content */}
       <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
@@ -99,7 +99,7 @@ const Home = () => {
 
     {/* Left Text Content */}
     <div className="lg:w-5/12 space-y-4">
-      <span className="bg-green-100 text-green-500 px-4 py-1 rounded-full text-sm font-medium inline-block">
+      <span className="bg-green-100 text-[#38622F] px-4 py-1 rounded-full text-sm font-medium inline-block">
         About Us
       </span>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -110,10 +110,10 @@ const Home = () => {
       </p>
       <Link
       to="/about"
-      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-[#38622F] rounded-lg overflow-hidden group"
     >
       {/* Hover Animation */}
-      <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+      <span className="absolute inset-y-0 right-0 w-0 bg-[#38622F] transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
 
       {/* Button Content */}
       <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
@@ -128,8 +128,8 @@ const Home = () => {
   <div className="flex flex-col gap-6 w-full sm:w-1/2">
     {/* Card 1 */}
    <div className="bg-white rounded-xl shadow-md p-6 transition duration-300 transform hover:scale-105 hover:shadow-lg group">
-  <div className="w-12 h-12 bg-green-200 group-hover:bg-green-400 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
-    <Brush className="w-6 h-6 text-green-600 group-hover:text-white transition-colors duration-300" />
+  <div className="w-12 h-12 bg-green-200 group-hover:bg-[#38622F] rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+    <Brush className="w-6 h-6 text-[#38622F] group-hover:text-white transition-colors duration-300" />
   </div>
   <h4 className="text-lg font-semibold text-gray-900">Creative Solutions</h4>
   <p className="text-sm text-gray-600 mt-2">
@@ -139,8 +139,8 @@ const Home = () => {
 
     {/* Card 3 */}
   <div className="bg-white rounded-xl shadow-md p-6 transition duration-300 transform hover:scale-105 hover:shadow-lg group">
-  <div className="w-12 h-12 bg-green-200 group-hover:bg-green-400 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
-    <ShieldCheck className="w-6 h-6 text-green-600 group-hover:text-white transition-colors duration-300" />
+  <div className="w-12 h-12 bg-green-200 group-hover:bg-[#38622F] rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+    <ShieldCheck className="w-6 h-6 text-[#38622F] group-hover:text-white transition-colors duration-300" />
   </div>
   <h4 className="text-lg font-semibold text-gray-900">Security & Trust</h4>
   <p className="text-sm text-gray-600 mt-2">
@@ -154,8 +154,8 @@ const Home = () => {
   <div className="flex flex-col gap-6 w-full sm:w-1/2">
     {/* Card 2 */}
    <div className="bg-white rounded-xl shadow-md p-6 transition duration-300 transform hover:scale-105 hover:shadow-lg group">
-  <div className="w-12 h-12 bg-green-200 group-hover:bg-green-400 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
-    <BarChart2 className="w-6 h-6 text-green-600 group-hover:text-white transition-colors duration-300" />
+  <div className="w-12 h-12 bg-green-200 group-hover:bg-[#38622F] rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+    <BarChart2 className="w-6 h-6 text-[#38622F] group-hover:text-white transition-colors duration-300" />
   </div>
   <h4 className="text-lg font-semibold text-gray-900">Data-Driven Strategies</h4>
   <p className="text-sm text-gray-600 mt-2">
@@ -165,8 +165,8 @@ const Home = () => {
 
     {/* Card 4 */}
     <div className="bg-white rounded-xl shadow-md p-6 transition duration-300 transform hover:scale-105 hover:shadow-lg group">
-  <div className="w-12 h-12 bg-green-200 group-hover:bg-green-400 rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
-    <Trophy className="w-6 h-6 text-green-600 group-hover:text-white transition-colors duration-300" />
+  <div className="w-12 h-12 bg-green-200 group-hover:bg-[#38622F] rounded-full flex items-center justify-center mb-4 transition-colors duration-300">
+    <Trophy className="w-6 h-6 text-[#38622F] group-hover:text-white transition-colors duration-300" />
   </div>
   <h4 className="text-lg font-semibold text-gray-900">Results-Oriented</h4>
   <p className="text-sm text-gray-600 mt-2">
@@ -190,7 +190,7 @@ const Home = () => {
 
 
 <div className='w-full px-2 py-8 md:px-[100px] bg-gray-50'>
-    <div className='max-w-6xl text-center mx-auto bg-green-500 rounded-lg p-8'>
+    <div className='max-w-6xl text-center mx-auto bg-[#38622F] rounded-lg p-8'>
         <h1 className='text-3xl md:text-4xl font-bold text-white'>
           Our Mission
         </h1>
@@ -220,7 +220,7 @@ innovation, and client focus.
 
     {/* Right Side - Content */}
     <div>
-      <h2 className="text-3xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-green-700 to-green-900 mb-6">
+      <h2 className="text-3xl sm:text-5xl font-extrabold text-[#38622F] mb-6">
         Why Clients Choose Us
       </h2>
 
@@ -230,8 +230,8 @@ innovation, and client focus.
 
       <ul className="space-y-4 text-gray-800 text-base leading-relaxed">
         <li className="flex items-start gap-3 group">
-          <span className="text-green-500 text-xl">🚀</span>
-          <span className="group-hover:text-green-600 transition-colors">Creative Meets Code</span>
+          <span className="text-[#38622F] text-xl">🚀</span>
+          <span className="group-hover:text-[#38622F] transition-colors">Creative Meets Code</span>
         </li>
         <li className="flex items-start gap-3 group">
           <span className="text-blue-500 text-xl">📈</span>
@@ -270,9 +270,9 @@ innovation, and client focus.
   <div className="w-full md:w-1/2 text-center md:text-left">
     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
       We Spin the digital yarn &<br />
-      <span className="text-green-500">Weave Your Story</span>
+      <span className="text-[#38622F]">Weave Your Story</span>
     </h2>
-    <div className="h-1 w-28 bg-green-500 mt-2 mb-4 mx-auto md:mx-0"></div>
+    <div className="h-1 w-28 bg-[#38622F] mt-2 mb-4 mx-auto md:mx-0"></div>
     <p className="text-gray-700 text-base md:text-lg">
       From ideation to tangible results, we as a digital marketing agency deliver the whole package.
       But first, we strive to understand your brand essence and create a customized digital experience.
@@ -317,7 +317,7 @@ innovation, and client focus.
 <div id='services' className='bg-gray-50 px-6 py-12 md:px-[100px] '>
     <div className='flex justify-center items-center flex-col'>
         <h1 className='text-3xl md:text-4xl font-bold'>Our Services </h1>
-         <div className="h-1 w-28 bg-green-500 mt-2 mb-4 mx-auto md:mx-0"></div>
+         <div className="h-1 w-28 bg-[#38622F] mt-2 mb-4 mx-auto md:mx-0"></div>
 
 
          <p>Helping businesses grow with tailored digital marketing strategies designed for success.</p>
@@ -337,7 +337,7 @@ innovation, and client focus.
       className="rounded-xl p-6 shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center bg-green-100 hover:bg-green-300"
     >
       <div className="flex justify-center items-center mb-4">
-        <Smartphone className="w-10 h-10 text-green-600" />
+        <Smartphone className="w-10 h-10 text-[#38622F]" />
       </div>
       <h3 className="text-xl font-bold text-gray-800">Mobile Development</h3>
       <p className="mt-2  mb-6 text-sm text-gray-700">
@@ -345,10 +345,10 @@ innovation, and client focus.
       </p>
       <Link
       to="/mobile-development"
-      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-[#38622F] rounded-lg overflow-hidden group"
     >
       {/* Hover Animation */}
-      <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+      <span className="absolute inset-y-0 right-0 w-0 bg-[#38622F] transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
 
       {/* Button Content */}
       <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
@@ -408,7 +408,7 @@ innovation, and client focus.
           className="w-full h-48 object-cover"
         />
         <div className="p-6">
-          <h3 className="text-xl font-semibold text-green-500 mb-2">Project One</h3>
+          <h3 className="text-xl font-semibold text-[#38622F] mb-2">Project One</h3>
           <p className="text-gray-600 text-sm">A modern website built using React and Tailwind CSS with responsive design.</p>
         </div>
       </div>
@@ -423,7 +423,7 @@ innovation, and client focus.
           className="w-full h-48 object-cover"
         />
         <div className="p-6">
-          <h3 className="text-xl font-semibold text-green-500 mb-2">Project Two</h3>
+          <h3 className="text-xl font-semibold text-[#38622F] mb-2">Project Two</h3>
           <p className="text-gray-600 text-sm">E-commerce platform with product pages and payment integration.</p>
         </div>
       </div>
@@ -438,7 +438,7 @@ innovation, and client focus.
           className="w-full h-48 object-cover"
         />
         <div className="p-6">
-          <h3 className="text-xl font-semibold text-green-500 mb-2">Project Three</h3>
+          <h3 className="text-xl font-semibold text-[#38622F] mb-2">Project Three</h3>
           <p className="text-gray-600 text-sm">Animated portfolio with smooth scroll and interactive elements.</p>
         </div>
       </div>
@@ -457,7 +457,7 @@ innovation, and client focus.
     
     {/* Text Section */}
     <div className="lg:w-1/2 text-center lg:text-left">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-500 leading-tight">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#38622F] leading-tight">
         Listen to what our clients have to say.
       </h1>
       <p className="mt-4 text-sm sm:text-base text-gray-600">
@@ -494,7 +494,7 @@ innovation, and client focus.
 
     {/* Left Side */}
     <div>
-      <h2 className="text-4xl md:text-5xl font-extrabold text-green-500 mb-4">Ready To Get Started?</h2>
+      <h2 className="text-4xl md:text-5xl font-extrabold text-[#38622F] mb-4">Ready To Get Started?</h2>
       <p className="text-gray-700 mb-10 max-w-md">
         Ready to boost your digital presence and drive business growth? Contact us today for tailored solutions that deliver real results! Let’s create something extraordinary together.
       </p>

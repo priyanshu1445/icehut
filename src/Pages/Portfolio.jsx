@@ -61,12 +61,12 @@ const Portfolio = () => {
         className="relative flex flex-col justify-center items-center h-[100vh] bg-cover bg-center bg-no-repeat text-white text-center"
         style={{
           backgroundImage:
-            `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${portfolioImage})`,
+            `linear-gradient(rgba(225,225,225,0.3), rgba(225,225,225,0.3)), url(${portfolioImage})`,
         }}
       >
 
-        <h1 className="text-4xl md:text-5xl font-extrabold">Explore Our Work</h1>
-        <p className="mt-4 text-lg max-w-2xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-[#38622F]">Explore Our Work</h1>
+        <p className="mt-4 text-gray-700 text-lg max-w-2xl mx-auto">
           Showcasing innovative, results-driven projects in design, tech, and strategy.
         </p>
 
@@ -74,7 +74,7 @@ const Portfolio = () => {
 
       {/* Intro */}
       <section className="py-12 px-6 md:px-24 bg-gray-50 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-green-700">What We Deliver</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-[#38622F]">What We Deliver</h2>
         <p className="mt-4 max-w-2xl mx-auto text-gray-600">
           From idea to execution, our team brings digital visions to life through modern UI, seamless UX, and strategic growth.
         </p>
@@ -111,12 +111,12 @@ const Portfolio = () => {
                 </div>
 
                 <div className="mt-4 flex justify-between items-center">
-                  <span className="text-xs px-3 py-1 bg-green-100 text-green-700 rounded-full">
+                  <span className="text-xs px-3 py-1 bg-green-100 text-[#38622F] rounded-full">
                     {item.category}
                   </span>
                   <a
                     href={item.link}
-                    className="text-green-700 hover:underline flex items-center gap-1"
+                    className="text-[#38622F] hover:underline flex items-center gap-1"
                   >
                     View <ExternalLink className="w-4 h-4" />
                   </a>
@@ -134,10 +134,10 @@ const Portfolio = () => {
 
         <Link
           to="/portfolio"
-          className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+          className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-[#38622F] rounded-lg overflow-hidden group"
         >
           {/* Hover Animation */}
-          <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+          <span className="absolute inset-y-0 right-0 w-0 bg-[#38622F] transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
 
           {/* Button Content */}
           <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
@@ -153,7 +153,7 @@ const Portfolio = () => {
 
 
       <div className="text-center py-12 bg-gray-50 w-full ">
-        <h1 className="text-green-500 text-3xl mb-6 md:text-5xl">You Demand, <br />
+        <h1 className="text-[#38622F] text-3xl mb-6 md:text-5xl">You Demand, <br />
           We Strategize & Deliver</h1>
 
 

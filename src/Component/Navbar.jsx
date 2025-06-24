@@ -40,7 +40,7 @@ const Navbar = () => {
       <header className="w-full fixed top-0 z-50">
         {/* Top Social Media Bar */}
         <div
-          className={`bg-green-500 text-white text-sm transition-all duration-500 ${
+          className={`bg-[#38622F] text-white text-sm transition-all duration-500 ${
             showBars ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
           }`}
         >
@@ -70,11 +70,11 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8 text-gray-700 font-medium">
-              <Link to="/" className="hover:text-green-600 transition">Home</Link>
-              <Link to="/about" className="hover:text-green-600 transition">About</Link>
-              <Link to="/services" className="hover:text-green-600 transition">Services</Link>
-              <Link to="/portfolio" className="hover:text-green-600 transition">Portfolio</Link>
-          <a href="tel:+918209843003" className="hover:text-green-600 transition">
+              <Link to="/" className="hover:text-[#38622F] transition">Home</Link>
+              <Link to="/about" className="hover:text-[#38622F] transition">About</Link>
+              <Link to="/services" className="hover:text-[#38622F] transition">Services</Link>
+              <Link to="/portfolio" className="hover:text-[#38622F] transition">Portfolio</Link>
+          <a href="tel:+918209843003" className="hover:text-[#38622F] transition">
 Contact
 </a>
 
@@ -94,11 +94,11 @@ Contact
               menuOpen ? "max-h-96 py-4" : "max-h-0"
             }`}
           >
-            <Link to="/" className="block py-2 text-gray-700 hover:text-green-600">Home</Link>
-            <Link to="/services" className="block py-2 text-gray-700 hover:text-green-600">Services</Link>
-            <Link to="/portfolio" className="block py-2 text-gray-700 hover:text-green-600">Portfolio</Link>
-            <Link to="/about" className="block py-2 text-gray-700 hover:text-green-600">About</Link>
-            <a href="tel:+918209843003" className="hover:text-green-600 transition">
+            <Link to="/" className="block py-2 text-gray-700 hover:text-[#38622F]">Home</Link>
+            <Link to="/services" className="block py-2 text-gray-700 hover:text-[#38622F]">Services</Link>
+            <Link to="/portfolio" className="block py-2 text-gray-700 hover:text-[#38622F]">Portfolio</Link>
+            <Link to="/about" className="block py-2 text-gray-700 hover:text-[#38622F]">About</Link>
+            <a href="tel:+918209843003" className="hover:text-[#38622F] transition">
 Contact
 </a>
 

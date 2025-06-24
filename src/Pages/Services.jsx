@@ -37,14 +37,14 @@ const Services = () => {
   className="relative text-center h-[100vh] py-20 flex justify-center flex-col items-center px-6 md:px-24 text-white bg-cover bg-center bg-no-repeat"
   style={{
     backgroundImage:
-      `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${serviceBanner}')`,
+      `linear-gradient(rgba(225,225,225,0.3), rgba(225,225,225,0.3)), url('${serviceBanner}')`,
   }}
 >
   
   <div data-aos="fade-up">
-      <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-green-500 to-green-700">We Don’t Just Build — We Transform</h1>
-    <div className="h-1 w-28 bg-green-500 mt-3 mb-6 mx-auto"></div>
-    <p className="text-lg text-gray-200 max-w-2xl mx-auto">
+      <h1 className="text-4xl md:text-5xl font-bold text-[#38622F] ">We Don’t Just Build — We Transform</h1>
+    <div className="h-1 w-28 bg-[#38622F] mt-3 mb-6 mx-auto"></div>
+    <p className="text-lg text-gray-700 max-w-2xl mx-auto">
       Helping businesses grow with tailored digital marketing strategies designed for success.
     </p>
   </div>
@@ -55,54 +55,10 @@ const Services = () => {
 
 
 <section className="bg-gray-50 py-16 px-4 md:px-10">
-  <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+  <h2 className="text-3xl md:text-4xl font-bold text-center  text-gray-800">
     Our Services
   </h2>
-
-  <div className="relative w-full max-w-6xl mx-auto">
-    {/* Horizontal Line (Desktop) */}
-    <div className="hidden md:block absolute top-5 left-0 right-0 h-1 bg-green-500 z-0"></div>
-
-    {/* Vertical Line (Mobile) */}
-    <div className="md:hidden absolute left-6 top-0 bottom-0 w-1 bg-green-500 z-0"></div>
-
-    {/* Steps */}
-    <div className="flex md:flex-row flex-col md:justify-between relative z-10 gap-12 md:gap-0">
-      {[
-        "Digital Strategy",
-        "SEO",
-        "Social Media",
-        "Technology & Design",
-        "Media Buying",
-        "Film & Production",
-        "Performance Marketing",
-        "Influencer Marketing",
-      ].map((item, idx) => (
-        <div
-          key={idx}
-          className="flex md:flex-col items-center md:items-center gap-4 md:w-auto w-full"
-          data-aos="fade-up"
-          data-aos-delay={idx * 100} // Stagger delay (0ms, 100ms, 200ms...)
-          data-aos-duration="700"
-        >
-          {/* Circle */}
-          <div className="h-10 w-10 rounded-full bg-white border-4 border-green-600 text-green-600 font-bold flex items-center justify-center z-10 md:mx-auto ml-4">
-            {idx + 1}
-          </div>
-
-          {/* Text */}
-          <p className="text-sm font-medium text-gray-700 w-fit md:mt-4 md:text-center">
-            {item}
-          </p>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
-
-      {/* Services Cards Section */}
+{/* Services Cards Section */}
     
 
 <section className="bg-gray-50 py-12 px-6 md:px-[100px]">
@@ -118,7 +74,7 @@ const Services = () => {
        className="rounded-xl p-6 shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-xl text-center bg-green-100 hover:bg-green-300"
      >
        <div className="flex justify-center items-center mb-4">
-         <Smartphone className="w-10 h-10 text-green-600" />
+         <Smartphone className="w-10 h-10 text-[#38622F]" />
        </div>
        <h3 className="text-xl font-bold text-gray-800">Mobile Development</h3>
        <p className="mt-2  mb-6 text-sm text-gray-700">
@@ -126,10 +82,10 @@ const Services = () => {
        </p>
        <Link
        to="/mobile-development"
-       className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+       className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-[#38622F] rounded-lg overflow-hidden group"
      >
        {/* Hover Animation */}
-       <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+       <span className="absolute inset-y-0 right-0 w-0 bg-[#38622F] transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
  
        {/* Button Content */}
        <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
@@ -169,21 +125,21 @@ const Services = () => {
 </div>
 
   {/*  section divider */}
-               <div className="h-1 w-28 bg-green-500 mt-2 mb-6 mx-auto"></div>
+               <div className="h-1 w-28 bg-[#38622F] mt-2 mb-6 mx-auto"></div>
 
 
 
 
           <div className="flex justify-center px-4 sm:px-6 py-8 sm:py-12">
   <div className="text-center">
-    <p className="text-sm sm:text-base mb-12 md:text-2xl lg:text-3xl text-white bg-green-500 rounded px-4 sm:px-8 md:px-10 py-2">
+    <p className="text-sm sm:text-base mb-12 md:text-2xl lg:text-3xl text-white bg-[#38622F] rounded px-4 sm:px-8 md:px-10 py-2">
       A LITTLE ABOUT OURSELVES
     </p>
 
 
-    <p className='text-3xl md:text-5xl font-bold mb-5 '>Stories need to be woven into <span className='text-green-500'>great tales</span></p>
+    <p className='text-3xl md:text-5xl font-bold mb-5 '>Stories need to be woven into <span className='text-[#38622F]'>great tales</span></p>
 
-             <div className="h-1 w-28 bg-green-500 mt-2 mb-6 mx-auto"></div>
+             <div className="h-1 w-28 bg-[#38622F] mt-2 mb-6 mx-auto"></div>
 
 
              <p className='text-gray-600 text-lg mb-8'>
@@ -197,10 +153,10 @@ but big enough to handle the larger projects. Our team is dedicated to crafting 
                 <div>
                    <Link
       to="/portfolio"
-      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-green-400 rounded-lg overflow-hidden group"
+      className="relative inline-flex items-center gap-2 px-6 py-3 font-semibold text-black border-2 border-[#38622F] rounded-lg overflow-hidden group"
     >
       {/* Hover Animation */}
-      <span className="absolute inset-y-0 right-0 w-0 bg-green-500 transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
+      <span className="absolute inset-y-0 right-0 w-0 bg-[#38622F] transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"></span>
 
       {/* Button Content */}
       <span className="relative z-10 flex items-center gap-2 group-hover:text-white transition-colors duration-300">
@@ -216,6 +172,12 @@ but big enough to handle the larger projects. Our team is dedicated to crafting 
 
 </section>
 
+</section>
+
+
+
+      
+
 
 {/*  contact form  */}
 
@@ -225,7 +187,7 @@ but big enough to handle the larger projects. Our team is dedicated to crafting 
 
     {/* Left Side */}
     <div>
-      <h2 className="text-4xl md:text-5xl font-extrabold text-green-500 mb-4">Ready To Get Started?</h2>
+      <h2 className="text-4xl md:text-5xl font-extrabold text-[#38622F] mb-4">Ready To Get Started?</h2>
       <p className="text-gray-700 mb-10 max-w-md">
         Ready to boost your digital presence and drive business growth? Contact us today for tailored solutions that deliver real results! Let’s create something extraordinary together.
       </p>
@@ -321,7 +283,7 @@ but big enough to handle the larger projects. Our team is dedicated to crafting 
           />
           <button
             type="submit"
-            className="bg-green-500 hover:bg-green-700 text-white p-4 rounded transition duration-300"
+            className="bg-[#38622F] hover:bg-green-700 text-white p-4 rounded transition duration-300"
           >
             <Send className="w-5 h-5" />
           </button>
